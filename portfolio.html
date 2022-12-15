@@ -261,51 +261,75 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="/" class="logo_footer"
-          ><span class="color_web">Web</span
-          ><span class="color_studio_white">Studio</span></a
-        >
-        <section class="join-in">
+      <div class="container all-footer">
+        <div class="main-footer">
+          <a href="/" class="logo_footer"
+            ><span class="color_web">Web</span
+            ><span class="color_studio_white">Studio</span></a
+          >
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mail_footer"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="tel_footer"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="join-in">
           <h3 class="join-in-title">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="join-in-icons-list">
             <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
+              <a class="join-in-icons" href=""
+                ><svg width="20" height="20">
                   <use href="./images/icons.svg#instagram-1"></use></svg
               ></a>
             </li>
             <li class="join-in-icons-item">
               <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter-1"></use></svg
-              ></a>
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#twitter-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="join-in-icons-item">
               <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
+                ><svg width="20" height="20">
                   <use href="./images/icons.svg#facebook-1"></use></svg
               ></a>
             </li>
             <li class="join-in-icons-item">
               <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
+                ><svg width="20" height="20">
                   <use href="./images/icons.svg#linkedin-1"></use></svg
               ></a>
             </li>
           </ul>
-        </section>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="mail_footer"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="tel_footer">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
+        <div class="sign-up">
+          <form name="signup_form" autocomplete="on" novalidate>
+            <div class="footer-form-field">
+              <label for="email"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button-submit">
+                Підписатися
+                <svg width="24" height="24" class="button-submit-icon">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

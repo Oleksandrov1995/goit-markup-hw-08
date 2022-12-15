@@ -350,50 +350,12 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container all-footer">
+        <div class="main-footer">
         <a href="/" class="logo_footer"
           ><span class="color_web">Web</span
-          ><span class="color_studio_white">Studio</span></a
-        >
-        <section class="join-in">
-          <h3 class="join-in-title">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="join-in-icons-list">
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#instagram-1"></use></svg
-              ></a>
-            </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter-1"></use></svg
-              ></a>
-            </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#facebook-1"></use></svg
-              ></a>
-            </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#linkedin-1"></use></svg
-              ></a>
-            </li>
-          </ul>
-          <form name="signup_form" autocomplete="on" novalidate>
-  <label>
-    ПІДПИШІТЬСЯ НА РОЗСИЛКУ
-    <input type="email" name="email" />
-  </label>
-
- 
-  <button type="submit">Підписатися</button>
-</form>
-        </section>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          ><span class="color_studio_white">Studio</span></a>
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
         <ul>
           <li>
             <a href="mailto:info@devstudio.com" class="mail_footer"
@@ -405,7 +367,43 @@
           </li>
         </ul>
       </div>
-
+        <div class="join-in">
+          <h3 class="join-in-title">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="join-in-icons-list">
+            <li class="join-in-icons-item">
+              <a class="join-in-icons" href="" 
+                ><svg  width="20" height="20">
+                  <use href="./images/icons.svg#instagram-1"></use></svg></a>
+            </li>
+            <li class="join-in-icons-item">
+              <a href="" class="join-in-icons"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#twitter-1"></use></svg>
+                </a>
+            </li>
+            <li class="join-in-icons-item">
+              <a href="" class="join-in-icons"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#facebook-1"></use></svg
+              ></a>
+            </li>
+            <li class="join-in-icons-item">
+              <a href="" class="join-in-icons"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#linkedin-1"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+  <div class="sign-up">
+  <form name="signup_form" autocomplete="on" novalidate>
+ <div class="footer-form-field"> <label for="email-footer"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+      <input type="email" name="email-footer" id="email-footer" placeholder="E-mail" />
+  <button type="submit" class="button-submit">Підписатися <svg width="24" height="24" class="button-submit-icon" > <use href="./images/icons.svg#send"></use> </svg> </button>
+</div>
+</form>
+</div>      
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -414,6 +412,20 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <h3>Залиште свої дані, ми вам передзвонимо</h3>
+        <form >
+          <label for="name">Ім'я</label>
+<input type="text" name="name" id="name">
+<label for="tel">Телефон</label>
+<input type="tel" name="tel" id="tel">
+<label for="email-modal">Пошта</label>
+<input type="email" name="email-modal" id="email-modal">
+<label for="coment-modal">Коментар</label>
+<textarea name="coment-modal" id="coment-modal" rows="10" placeholder="Введіть текст"></textarea>  
+<input type="checkbox" name="policy" id="policy">
+<label for="policy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+<button type="submit">Відправити</button>   
+</form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
