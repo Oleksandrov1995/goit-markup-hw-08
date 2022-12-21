@@ -67,7 +67,7 @@
       <section class="order-a-service order-a-service__image">
         <div class="container">
           <h1 class="order-a-service__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="order-a-service__button" data-modal-open>
+          <button type="button" class="button order-a-service__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -342,52 +342,51 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="page-footer">
       <div class="container all-footer">
         <div class="main-footer">
           <a href="/" class="logo"
             ><span>Web</span
             ><span class="logo--color-white">Studio</span></a
           >
-          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <address class="page-footer__address">м. Київ, пр-т Лесі Українки, 26</address>
           <ul>
             <li>
-              <a href="mailto:info@devstudio.com" class="mail_footer"
+              <a href="mailto:info@devstudio.com" class="page-footer__contacts"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+380961111111" class="tel_footer"
+              <a href="tel:+380961111111" class="page-footer__contacts page-footer__tel"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
         </div>
         <div class="join-in">
-          <h3 class="join-in-title">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="join-in-icons-list">
-            <li class="join-in-icons-item">
-              <a class="join-in-icons" href=""
-                ><svg width="20" height="20">
+          <h3 class="join-in__title">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="social-networks__list">
+            <li class="social-networks__item">
+              <a href="" class="social-networks__icons page-footer__social-networks"
+                ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#instagram-1"></use></svg
               ></a>
             </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#twitter-1"></use>
-                </svg>
-              </a>
+            <li class="social-networks__item">
+              <a href="" class="social-networks__icons page-footer__social-networks"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#twitter-1"></use></svg
+              ></a>
             </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20" height="20">
+            <li class="social-networks__item">
+              <a href="" class="social-networks__icons page-footer__social-networks"
+                ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#facebook-1"></use></svg
               ></a>
             </li>
-            <li class="join-in-icons-item">
-              <a href="" class="join-in-icons"
-                ><svg width="20" height="20">
+            <li class="social-networks__item">
+              <a href="" class="social-networks__icons page-footer__social-networks"
+                ><svg width="20px" height="20px">
                   <use href="./images/icons.svg#linkedin-1"></use></svg
               ></a>
             </li>
@@ -395,8 +394,8 @@
         </div>
         <div class="sign-up">
           <form name="signup_form" autocomplete="on" novalidate>
-            <div class="footer-form-field">
-              <label for="email-footer" class="label-footer">
+            <div class="page-footer__form-field">
+              <label for="email-footer" class="page-footer__label">
                 ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label
               >
               <input
@@ -405,9 +404,9 @@
                 id="email-footer"
                 placeholder="E-mail"
               />
-              <button type="submit" class="button-submit">
+              <button type="submit" class="button page-footer__button ">
                 Підписатися
-                <svg width="24" height="24" class="button-submit-icon">
+                <svg width="24" height="24" class="button__icon">
                   <use href="./images/icons.svg#send"></use>
                 </svg>
               </button>
@@ -418,35 +417,35 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close class="buton-modal-close">
-          <svg class="button-close-icon" width="30" height="30">
+        <button type="button" data-modal-close class="buton--close">
+          <svg class="button--close-icon" width="30" height="30">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <h3 class="title-modal">Залиште свої дані, ми вам передзвонимо</h3>
+        <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
         <form>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label for="name">Ім'я</label>
             <input type="text" name="name" id="name" />
-            <svg width="18" height="18" class="icons-modal">
+            <svg width="18" height="18" class="modal__icon">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label for="tel">Телефон</label>
             <input type="tel" name="tel" id="tel" />
-            <svg width="18" height="18" class="icons-modal">
+            <svg width="18" height="18" class="modal__icon">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label for="email-modal">Пошта</label>
             <input type="email" name="email-modal" id="email-modal" />
-            <svg width="18" height="18" class="icons-modal">
+            <svg width="18" height="18" class="modal__icon">
               <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label for="coment-modal">Коментар</label>
             <textarea
               name="coment-modal"
@@ -455,15 +454,15 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="checkbox-modal">
+          <div class="modal__checkbox">
             <input class="checkbox" type="checkbox" name="policy" id="policy" />
-            <span class="checkbox-icon-modal"></span>
+            <span class="checkbox__icon"></span>
             <label for="policy"
               >Погоджуюся з розсилкою та приймаю
-              <a href="" class="policy-modal">Умови договору</a></label
+              <a href="" class="modal__policy ">Умови договору</a></label
             >
           </div>
-          <button type="submit" class="button-send-modal">Відправити</button>
+          <button type="submit" class="button modal__button">Відправити</button>
         </form>
       </div>
     </div>
