@@ -24,44 +24,35 @@
     </style>
   </head>
   <body>
-    <header class="head_of_page">
-      <!--head_of_page-->
+    <header class="page-header">
       <div class="container">
-        <a href="/" class="logo_1"
-          ><span class="color_web">Web</span
-          ><span class="color_studio_black">Studio</span></a
-        >
-        <nav class="site_nav">
-          <!--navigation_to_another_page-->
-
-          <ul class="site_nav_list">
-            <li class="index">
-              <a href="./index.html" class="nav_style">Студія</a>
+        <a href="/" class="logo page-header__logo"
+          ><span>Web</span
+          ><span class="logo--color-black">Studio</span></a>
+        <nav class="navigation">
+            <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link">Студія</a>
             </li>
-            <li class="portfolio">
-              <a href="./portfolio.html" class="nav_style current">Портфоліо</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link current">Портфоліо</a>
             </li>
-            <li class="contacts"><a href="/" class="nav_style">Контакти</a></li>
+            <li class="navigation__item"><a href="/" class="navigation__link">Контакти</a></li>
           </ul>
         </nav>
-        <!--mail_and_tel-->
-        <div class="mail_tel">
-          <ul class="mail_tel_list">
-            <li class="mail">
-              <a href="mailto:info@devstudio.com" class="mail_tel_style">
-                <svg
-                  class="mail_tel_icon envelope-hover"
-                  width="16px"
-                  height="12px"
-                >
+         <div class="contacts page-header__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link"
+                ><svg class="contacts__icon" width="16" height="12" >
                   <use href="./images/icons.svg#envelope-hover"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="tel">
-              <a href="tel:+380961111111" class="mail_tel_style"
-                ><svg class="mail_tel_icon smartphone">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link"
+                ><svg class="contacts__icon" width="10" height="16" >
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -74,27 +65,27 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="portfolio-buttons_list">
-            <li class="porfolio_buttons_item">
-              <button type="button" class="portfolio_button_text">Усі</button>
+          <ul class="buttons__list">
+            <li class="buttons__item">
+              <button type="button" class="portfolio-button__text">Усі</button>
             </li>
-            <li class="porfolio_buttons_item">
-              <button type="button" class="portfolio_button_text">
+            <li class="buttons__item">
+              <button type="button" class="portfolio-button__text">
                 Веб-сайти
               </button>
             </li>
-            <li class="porfolio_buttons_item">
-              <button type="button" class="portfolio_button_text">
+            <li class="buttons__item">
+              <button type="button" class="portfolio-button__text">
                 Додатки
               </button>
             </li>
-            <li class="porfolio_buttons_item">
-              <button type="button" class="portfolio_button_text">
+            <li class="buttons__item">
+              <button type="button" class="portfolio-button__text">
                 Дизайн
               </button>
             </li>
-            <li class="porfolio_buttons_item">
-              <button type="button" class="portfolio_button_text">
+            <li class="buttons__item">
+              <button type="button" class="portfolio-button__text">
                 Маркетинг
               </button>
             </li>
