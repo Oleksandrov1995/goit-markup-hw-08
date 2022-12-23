@@ -1,0 +1,22 @@
+.social-networks{
+&__list {
+    display: flex;
+    justify-content: center;
+   
+    margin-bottom: 30px;
+  }
+  &__icons {
+    padding: 12px;
+    fill: $color-gray4;
+    display: flex;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icons:hover {
+    fill: $color-white;
+    background-color: $color-blue;
+  }
+  &__item:nth-child(n + 2) {
+    margin-left: 10px;
+  }}

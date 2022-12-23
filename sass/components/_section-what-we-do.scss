@@ -1,0 +1,28 @@
+.what-we-do {
+    padding-top: 0;
+  
+  &__list {
+    display: flex;
+  }
+  &__item {
+    height: 294px;
+    position: relative;
+  }
+  &__item:nth-child(n + 2) {
+    margin-left: 30px;
+  }
+  &__title {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-gray3;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }}

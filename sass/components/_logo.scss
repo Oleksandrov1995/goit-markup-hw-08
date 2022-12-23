@@ -1,0 +1,10 @@
+.logo{
+    display: inline-block;
+    font-family: $font-raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: $color-blue;
+    &--color-black {color: $color-black;}
+    &--color-white{color: $color-white;}
+   }
