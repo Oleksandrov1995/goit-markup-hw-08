@@ -44,6 +44,10 @@ body { background-color: $color-white;
   @media screen and (min-width: 768px) {
     .container {max-width: 768px;
     }}
+    @media screen and (min-width: 1200px){
+      .container {max-width: 1200px;
+      }
+    }
     .visually-hidden {
     position: absolute;
     white-space: nowrap;
