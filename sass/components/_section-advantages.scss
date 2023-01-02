@@ -1,35 +1,86 @@
-.advantages{
-&__list {
-    display: flex;
+.advantages {
+  &__list {
+    text-align: center;
+     display: inline-block;
   }
-  &__icons:nth-child(n + 2) {
-    margin-left: 30px;
-  }
-  &__icons {
-    background-color: $color-white2;
-    padding: 25px 98px;
-    width: 270px;
-  }
-  
   &__item {
     margin-top: 30px;
-    width: 270px;
+    justify-content: center;
   }
-  &__item:nth-child(n + 2) {
-    margin-left: 30px;
+  &__icon {
+    background-color: $color-white2;
+    display: inline-block;
+    padding: 25px 0;
+    width: 100%;
   }
   &__title {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
-    color:$color-black2;
-    margin-bottom: 10px;
+    text-align: center;
+    color: $color-black2;
+    margin-top: 30px;
   }
   &__text {
+    text-align: start;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color:$color-gray;
-  }}
+    color: $color-gray;
+    margin-top: 10px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .advantages { 
+    &__list{display: flex;
+    flex-wrap: wrap;}
+    &__item{max-width: 354px;}
+    &__item:nth-child(n+3){margin-top: 30px;}
+    &__item:nth-child(2n+1){margin-right: 30px;}
+    &__title {text-align: start;}}
+}
+@media screen and(min-width: 1200px) {
+  .advantages { 
+     &__list{ justify-content: space-between;}
+    &__item{max-width: 270px;
+    margin: 0;}
+      &__item:nth-child(n+3){margin-top: 0;}
+      &__item:nth-child(2n+1){margin-right: 0;}  
+ } }
+// {&__list
+//     display: flex;
+//   }
+//   &__icons:nth-child(n + 2) {
+//     margin-left: 30px;
+//   }
+//   &__icons {
+//     background-color: $color-white2;
+//     padding: 25px 98px;
+//     width: 270px;
+//   }
+
+//   &__item {
+//     margin-top: 30px;
+//     width: 270px;
+//   }
+//   &__item:nth-child(n + 2) {
+//     margin-left: 30px;
+//   }
+//   &__title {
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.2;
+//     color:$color-black2;
+//     margin-bottom: 10px;
+//   }
+//   &__text {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     color:$color-gray;
+//   }}

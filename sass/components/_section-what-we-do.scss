@@ -1,4 +1,8 @@
-.what-we-do {
+.what-we-do{display: none;}
+@media screen and (min-width: 1200px){
+.what-we-do {display: block;
+  margin-left: auto;
+  margin-right: auto;
     padding-top: 0;
   
   &__list {
@@ -25,4 +29,4 @@
     bottom: 0;
     left: 0;
     width: 100%;
-  }}
+  }}}
