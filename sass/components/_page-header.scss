@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid $color-gray;
-  padding: 10px 0px;
+  padding: 10px 15px;
 }
 
 .page-header-mobile {
@@ -16,7 +16,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 3;
+  z-index: 2;
 }
 .page-header__button:hover {
   fill: $color-blue;
@@ -41,7 +41,7 @@
   display: none;
   &.is-open {
     display: block;
-    z-index: 2;
+    z-index: 1;
   }
 }
 .navigation {
@@ -112,9 +112,9 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .page-header {
-    padding: 0;
-  }
+  // .page-header {
+  //   padding: 0;
+  // }
   .page-header-mobile {
     display: block;
     position: absolute;
@@ -137,7 +137,7 @@
   }
   .navigation {
     display: inline-block;
-    margin-left: 230px;
+    margin-left: 220px;
   }
   .navigation__list {
     display: flex;
@@ -157,7 +157,7 @@
   .page-header__contacts {
     display: inline-block;
     padding: 0;
-    margin: 0 0 0 85px;
+    margin: 0 0 0 75px;
   }
   .contacts__item {
     margin: 0;

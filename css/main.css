@@ -112,7 +112,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #757575;
-  padding: 10px 0px;
+  padding: 10px 15px;
 }
 
 .page-header-mobile {
@@ -132,7 +132,7 @@ textarea {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 3;
+  z-index: 2;
 }
 
 .page-header__button:hover {
@@ -163,7 +163,7 @@ textarea {
 }
 .navigation-contacts.is-open {
   display: block;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navigation {
@@ -246,9 +246,6 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
-    padding: 0;
-  }
   .page-header-mobile {
     display: block;
     position: absolute;
@@ -279,7 +276,7 @@ textarea {
   }
   .navigation {
     display: inline-block;
-    margin-left: 230px;
+    margin-left: 220px;
   }
   .navigation__list {
     display: -webkit-box;
@@ -300,7 +297,7 @@ textarea {
   .page-header__contacts {
     display: inline-block;
     padding: 0;
-    margin: 0 0 0 85px;
+    margin: 0 0 0 75px;
   }
   .contacts__item {
     margin: 0;
@@ -1141,6 +1138,8 @@ textarea {
   }
 }
 .backdrop {
+  overflow-y: scroll;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
@@ -1162,10 +1161,11 @@ textarea {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 390px;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 94%;
+  height: 609px;
+  z-index: 3;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1201,10 +1201,13 @@ textarea {
 }
 
 .modal__title {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
   margin-top: 40px;
@@ -1395,4 +1398,20 @@ textarea {
 .modal__button:hover {
   background-color: #ffffff;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    width: 528px;
+    height: 581px;
+  }
+  .modal__title {
+    width: 448px;
+  }
 }/*# sourceMappingURL=main.css.map */
