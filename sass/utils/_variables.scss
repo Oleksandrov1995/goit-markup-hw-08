@@ -16,51 +16,5 @@ $color-gray4:#afb1b8;
 $color-gray5:rgba(175, 177, 184, 1);
 $color-gray6:#2f303a;
 
-body { background-color: $color-white;
-    font-family:$font-roboto;
-    }
-  a {text-decoration: none;}
-  a:hover {color:$color-blue;}
-  button {
-    cursor: pointer;
-  }
-  a:focus {color:$color-blue;}
-  button:hover {color:$color-blue;}
-  button:focus {color:$color-blue; }
-  li {    list-style-type: none;}
-  td {    cursor: pointer;}
-  html {    box-sizing: border-box;}
-  *,
-  *::before,
-  *::after {    box-sizing: inherit;}
-  textarea {resize: none;}
-  .section {padding-top: 60px;
-    padding-bottom: 60px;}
-    
-  .container {padding-left: 15px;
-    padding-right: 15px;
-   max-width: 480px;
-    margin: 0 auto;
-  position: relative;}
-  @media screen and (min-width: 768px) {
-    .container {max-width: 768px;
-    }}
-    @media screen and (min-width: 1200px){
-      .container {max-width: 1200px;
-      }
-      .section{padding-top: 94px;
-        padding-bottom: 94px;}
-    }
-    .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;}
    
      
