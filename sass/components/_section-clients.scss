@@ -1,5 +1,6 @@
 .clients {
-  width: 100%;
+  width: 140px;
+ 
   border: 1px solid $color-gray5;
   border-radius: 4px;
   fill: $color-gray4;
@@ -21,8 +22,12 @@
       margin-bottom: 0;}
   }
 }
+@media screen and (min-width: 450px){.clients {
+  width: 210px;
+ }}
 @media screen and (min-width: 768px) {
   .clients {
+    width: 226px;
     &__item {width: 226px;
       &:nth-child(n + 4) {
         margin-bottom: 0;}}
@@ -30,25 +35,8 @@
 }
 @media screen and (min-width: 1200px){
   .clients {
+    width: 170px;
     &__item {width: 170px;     
         margin-bottom: 0;}
   }
 }
-// .clients {
-//   border: 1px solid $color-gray5;
-//   border-radius: 4px;
-//   fill: $color-gray4;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     &:hover {
-//       fill: $color-blue;
-//       border: 1px solid $color-blue;
-//     }
-
-//     &__item:nth-child(n + 2) {
-//       margin-left: 30px;
-//     }
-//     &__list {
-//       display: flex;
-//       justify-content: center;
-//     }
